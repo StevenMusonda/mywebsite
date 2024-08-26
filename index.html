@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f1f1f1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+video {
+  width: 400px;
+  height: 280px;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">HOME</a>
+  <a href="education.html">EDUCATION</a>
+  <a href="contact.html">CONTACT ME</a>
+  <a href="skills.html">SKILL</a>
+  <a href="hobbies.html">HOBBIES</a>
+  <a href="personal details.html">PERSONAL DETAILS</a>
+  <a href="businesscard.html">BUSINESS CARD AND NAME TAG</a>
+  <a href="mockup.html">MOCKUP'S</a>
+</div>
+
+<header style="background-color: gray; background-size: cover; border-radius: 30px;" >
+    <h1 style="color: black;">KATWAMBA  MUSONDA</h1>
+    <h2 style="color: black;">PORTFOLIO</h2>
+    <h3 style="color: black;">A SOFTWARE ENGINEER WHO AIM'S TO BE BETTER WITH ROOM FOR IMPROVEMENT!</h3>
+</header>
+
+<br>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+
+<br>
+<br>
+
+<!-- portfilio intro -->
+<div>
+  <p><strong>WELCOME TO MY WEB PORTFOLIO:</strong></p>
+  <p>My names are Katwamba Musonda.</p>
+  <p>I am a student at Zambian University-College of Technology , studying software engineering.</p>
+  <p>For information about me press on <strong>MENU</strong>.</p>
+</div>
+<!-- portfilio intro -->
+
+<div class="videoWrapper">
+  <video autoplay="" loop="" muted="" class="custom-video" poster="videos/pexels-pavel-danilyuk-5495890 (1080p).mp4">
+      <source src="videos/pexels-pavel-danilyuk-5495890 (1080p).mp4" type="video/mp4">
+
+      Your browser does not support the video tag.
+  </video>
+</div>
+
+<br>
+
+<footer>
+<p>&copy; MK, 2024</p>
+</footer>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+
+</html> 
